@@ -1,0 +1,937 @@
+$deepGray: #282c34;
+$lightGray: #888888;
+$paleGray: #dcdcdc;
+$clickable: #1e90ff;
+$clickableHover: #4169e1;
+$deepBlue: #000080;
+$black: #000000;
+$white: #ffffff;
+$orange: #ff6347;
+$green: #9acd32;
+$red: #dc143c;
+
+body {
+	background: $paleGray;
+}
+
+h4,
+h5,
+h6,
+p {
+	text-align: left;
+	margin-block-start: 0;
+	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+	font-weight: normal;
+}
+
+#main {
+	background: rgba($deepGray, 100%);
+	border: 1px solid rgba($deepGray, 50%);
+	height: 100vh;
+}
+.main {
+	position: relative;
+	width: 1200px;
+	margin: 40px auto;
+	padding: 0;
+	height: 600px;
+	background: #f8f8f8;
+	overflow: hidden;
+}
+.welcome,
+.welcome2 {
+	width: calc(100% - 40px);
+	height: 65px;
+	padding: 0 20px;
+	background: rgba($paleGray, 30%);
+	.roundClick {
+		margin: 0;
+	}
+}
+.caption {
+	float: left;
+	width: 300px;
+
+	h4 {
+		line-height: 60px;
+	}
+}
+.today {
+	width: 200px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	margin-right: 20px;
+	color: $clickableHover;
+	text-align: right;
+	line-height: 58px;
+}
+.welcome2 .today {
+	position: relative;
+	float: right;
+	margin-top: -64px;
+}
+.datePad {
+	width: 310px;
+	margin: auto;
+	background: rgba($deepGray, 50%);
+	padding: 0 10px;
+	border-radius: 0 0 20px 20px;
+	h5 {
+		text-align: center;
+		font-weight: normal;
+		line-height: 14px;
+		margin: 0;
+		color: $white;
+	}
+}
+.searchDatePad {
+	width: 300px;
+	height: 50px;
+	margin: auto;
+	background: rgba($white, 20%);
+	margin-top: 0;
+	border-radius: 25px;
+}
+.searchbyDate {
+	position: relative;
+	display: inline-block;
+	width: 120px;
+
+	margin-top: 0;
+
+	.roundClick {
+		position: absolute;
+		margin-top: -30px;
+		margin-left: -10px;
+		background: $black;
+		color: $white;
+	}
+}
+
+.resultBox {
+	width: 394px;
+	height: auto;
+	margin: auto;
+	padding: 20px 0;
+	position: relative;
+	float: left;
+}
+.result {
+	width: 300px;
+	margin: 30px auto;
+	p {
+		text-align: center;
+		font-size: 18px;
+		line-height: 22px;
+		margin: 0;
+		color: $lightGray;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 34px;
+		line-height: 60px;
+		margin: 0;
+		color: $deepBlue;
+	}
+}
+.result2 {
+	width: 170px;
+	height: 120px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 10px;
+
+	p {
+		text-align: center;
+		margin: 0;
+		color: $lightGray;
+	}
+
+	h3 {
+		text-align: center;
+		font-weight: thin;
+		font-size: 30px;
+		line-height: 40px;
+		margin: 0;
+		margin-top: 40px;
+		color: $deepBlue;
+	}
+	h5 {
+		text-align: center;
+		font-weight: thin;
+		font-size: 18px;
+		line-height: 18px;
+
+		margin: 15px 0;
+		color: $deepBlue;
+	}
+	span {
+		font-size: 12px;
+		line-height: 14px;
+		margin: 0;
+		color: $deepGray;
+	}
+}
+.tabButton {
+	color: $deepGray;
+	background: $paleGray;
+	font-size: 14px;
+	line-height: 18px;
+	margin: 5px 2px;
+	padding: 5px 10px;
+	border: none;
+	border-radius: 4px;
+	width: auto;
+	display: inline;
+	transition-duration: 0.5s;
+}
+.tabButton:hover {
+	color: $deepBlue;
+	background: rgba($paleGray, 30%);
+}
+.pClient {
+	text-align: left;
+	font-size: 16px;
+	line-height: 32px;
+	margin: 0;
+	color: $red;
+	padding: 5px;
+	border-bottom: 1px solid rgba($lightGray, 30%);
+	span {
+		font-size: 14px;
+		width: 300px;
+		text-align: left;
+		color: $lightGray;
+	}
+}
+.pCons {
+	text-align: left;
+	font-size: 16px;
+	line-height: 18px;
+	margin: 0;
+	color: $red;
+	padding: 5px;
+	border-top: 1px solid rgba($lightGray, 30%);
+	span {
+		font-size: 13px;
+		width: 300px;
+		text-align: left;
+		color: $deepGray;
+	}
+}
+.title {
+	color: $deepBlue;
+}
+
+.modalTitle {
+	color: $white;
+	text-align: center;
+}
+
+.schedule {
+	position: relative;
+	width: 370px;
+	height: 545px;
+	float: right;
+	z-index: 10;
+	background: $white;
+	padding: 20px;
+	h4 {
+		padding: 10px 0;
+		color: $lightGray;
+	}
+	h5 {
+		padding: 5px 0;
+		color: $deepGray;
+	}
+}
+.button {
+	position: relative;
+	font-size: 14px;
+	padding: 10px;
+	text-align: center;
+	width: auto;
+	min-width: 90px;
+	border: none;
+	transition-duration: 0.5s;
+	border-radius: 8px;
+	background-color: $black;
+	color: white;
+}
+
+.button2,
+.formButton,
+.printButton {
+	position: relative;
+	font-size: 14px;
+	padding: 10px 10px;
+	text-align: center;
+	width: auto;
+	min-width: 150px;
+	border: none;
+	transition-duration: 0.5s;
+	border-radius: 8px;
+	background-color: $black;
+	color: white;
+	margin-right: 2px;
+	display: block;
+}
+.formButton {
+	position: fixed;
+
+	right: 60px;
+	bottom: 100px;
+	background-color: $clickable;
+}
+.printButton {
+	background-color: $clickable;
+	margin: 5px;
+}
+.buttonM {
+	width: 40px;
+	margin-right: 2px;
+	margin-top: 35px;
+	position: relative;
+	font-size: 14px;
+	padding: 5px;
+	text-align: center;
+	border: none;
+	transition-duration: 0.5s;
+	border-radius: 8px;
+	background-color: $black;
+	color: white;
+}
+.button:hover,
+.button2:hover,
+.formButton:hover,
+.buttonM:hover,
+.printButton:hover {
+	background-color: $clickableHover;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.center {
+	position: relative;
+	width: 140px;
+	display: block;
+	margin: 10px auto;
+
+	text-align: center;
+}
+.start {
+	margin: 30 auto;
+	width: 140px;
+	font-size: 18px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+.roundButton {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 32px;
+	height: 32px;
+	margin-top: 5px;
+	margin-right: 5px;
+	border: none;
+	text-align: center;
+	line-height: 16px;
+	font-size: 17px;
+	z-index: 999;
+	color: white;
+	transition-duration: 0.5s;
+	background-color: $black;
+	border-radius: 16px;
+}
+.roundClick {
+	position: relative;
+	float: left;
+
+	width: 32px;
+	height: 32px;
+	margin: 10px 5px;
+	border: none;
+	text-align: center;
+	line-height: 16px;
+	font-size: 17px;
+
+	color: $black;
+	transition-duration: 0.5s;
+	background-color: $paleGray;
+	border-radius: 16px;
+}
+
+.roundClickOne {
+	width: 28px;
+	height: 28px;
+	margin: 5px;
+	border: none;
+	text-align: center;
+	line-height: 14px;
+	font-size: 14px;
+	color: $black;
+	transition-duration: 0.5s;
+	background-color: $paleGray;
+	border-radius: 16px;
+}
+.roundButton:hover,
+.roundClick:hover,
+.roundClickOne:hover {
+	background-color: $clickableHover;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+}
+form {
+	width: 600px;
+	padding: 20px 0;
+	margin: auto;
+	.roundClick {
+		color: $white;
+		background: $black;
+		position: relative;
+		float: none;
+	}
+	p {
+		color: $white;
+		text-align: left;
+		margin-left: 120px;
+		margin-bottom: 20px;
+		width: 265px;
+		padding: 10px;
+		display: block;
+		background: rgba($black, 50%);
+	}
+	h5 {
+		line-height: 40px;
+		color: $white;
+	}
+}
+.formSec {
+	width: 500px;
+	float: left;
+	border: 0px solid yellow;
+	display: block;
+}
+.form-group {
+	width: 500px;
+	height: 60px;
+	margin: auto;
+}
+label {
+	color: gray;
+	font-size: 14px;
+	line-height: 20px;
+	width: 100px;
+	position: relative;
+
+	text-align: right;
+	padding: 0;
+	margin: 10px;
+
+	float: left;
+}
+input,
+select {
+	background: none;
+	color: white;
+	font-size: 16px;
+	padding: 10px 10px 10px 5px;
+	position: relative;
+	float: left;
+	width: 270px;
+	border: 1px solid gray;
+	border-radius: 0;
+	margin: 0;
+	margin-bottom: 10px;
+}
+select {
+	width: 290px;
+}
+
+.checkbox-label {
+	width: 500px;
+	color: $white;
+	text-align: left;
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 12px;
+	cursor: pointer;
+	font-size: 15px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	input {
+		position: absolute;
+		opacity: 0;
+		cursor: pointer;
+		height: 25px;
+		width: 0;
+	}
+}
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+}
+
+.checkbox-label:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-label input:checked ~ .checkmark {
+	background-color: #2196f3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkbox-label:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-label input:checked ~ .checkmark:after {
+	display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-label .checkmark:after {
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.react-datepicker__input-container input {
+	margin: 0;
+	width: 170px;
+}
+option {
+	color: $deepGray;
+}
+
+.formButton {
+	margin: auto;
+	display: block;
+}
+.consSearchPanel {
+	width: 900px;
+	height: 70px;
+	background: $deepGray;
+	margin: auto;
+	display: Block;
+	border-radius: 0 0 20px 20px;
+}
+#searchCons {
+	width: 270px;
+	padding: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
+	input {
+		margin: 0;
+		width: 200px;
+		margin-right: 10px;
+	}
+	.roundClick {
+		margin-top: 0;
+	}
+}
+
+.clientDisplay {
+	width: 1000px;
+	margin: auto;
+}
+.clientList {
+	width: 990px;
+	height: 50px;
+	margin: 5px auto;
+
+	background: rgba($white, 30%);
+	border-radius: 5px;
+	overflow: hidden;
+	transition-duration: 0.5s;
+}
+
+.clientList:hover {
+	width: 998px;
+	margin: 5px auto;
+
+	background: $white;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.clientName {
+	width: 200px;
+	background: $green;
+	padding: 10px;
+	float: left;
+	h4 {
+		color: $white;
+		font-size: 18px;
+		line-height: 18px;
+		margin: 0;
+	}
+	p {
+		color: $lightGray;
+		text-align: left;
+		padding: 0;
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+.popUp {
+	background: $deepGray;
+	width: 300px;
+	height: 200px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 50%;
+	margin-top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.clientUpdate {
+	background: rgba($deepGray, 95%);
+	width: 70%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 30%;
+	height: 100vh;
+}
+.consUpdate {
+	background: $white;
+	width: 70%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-left: 30%;
+	height: 100vh;
+
+	input,
+	select,
+	h5 {
+		color: $deepGray;
+	}
+	button {
+		background: $black;
+	}
+}
+nav {
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	background-color: $deepGray;
+	word-spacing: 4px;
+	font-size: 16px;
+	padding: 30px;
+	text-align: center;
+	li {
+		display: inline;
+	}
+	a {
+		font-size: 16px;
+		color: white;
+		text-decoration: none;
+		padding: 10px;
+		transition-duration: 0.5s;
+	}
+	a:hover {
+		color: $clickableHover;
+		background: $black;
+	}
+
+	input {
+		width: 80px;
+		height: 16px;
+		padding: 10px;
+		margin: 0;
+		border-radius: 36px;
+		background: $paleGray;
+		color: $deepGray;
+		border: 2px solid $clickable;
+	}
+}
+
+.react-datepicker__input-container input {
+	width: 80px;
+	height: 16px;
+	padding: 8px;
+	margin: 0;
+	margin-top: 4px;
+	position: relative;
+	display: inline-block;
+	border-radius: 36px;
+	background: $paleGray;
+	color: $deepGray;
+	border: 2px solid $clickable;
+}
+
+.listButtons {
+	position: relative;
+	float: right;
+	width: 90px;
+	background: $deepGray;
+	height: 55px;
+}
+.consigner {
+	width: 60%;
+	padding: 10px;
+	float: left;
+
+	p {
+		color: $deepGray;
+		text-align: left;
+		padding: 5px 10px;
+		margin-right: 5px;
+		font-size: 16px;
+		line-height: 18px;
+		float: left;
+		background: rgba($paleGray, 50%);
+		border-radius: 14px;
+	}
+}
+.consContent {
+	width: 1210px;
+	margin: auto;
+}
+.consList {
+	width: 1190px;
+	margin: 2px auto;
+	background: rgba($white, 30%);
+	border-radius: 5px;
+	overflow: hidden;
+	transition-duration: 0.5s;
+}
+
+.consList:hover {
+	width: 1200px;
+	background: rgba($white, 100%);
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.consName {
+	position: relataive;
+	display: block;
+	height: 40px;
+	h4 {
+		color: $clickable;
+		font-size: 16px;
+		line-height: 18px;
+		margin: 0;
+		margin-bottom: 15px;
+		margin-left: 10px;
+		margin-top: 12px;
+	}
+
+	p {
+		color: $lightGray;
+		text-align: left;
+		padding: 0;
+		font-size: 12px;
+		line-height: 18px;
+		margin: 0;
+		margin-top: 13px;
+		margin-left: 10px;
+		display: none;
+	}
+}
+.consTitle {
+	width: 1190px;
+	height: 35px;
+	margin: 2px auto;
+	overflow: hidden;
+	.consName {
+		height: 20px;
+	}
+	p {
+		color: $black;
+		text-align: left;
+		padding: 0;
+		font-size: 12px;
+		line-height: 18px;
+		margin: 0;
+		margin-top: 13px;
+		margin-left: 10px;
+		display: show;
+	}
+}
+
+.consCell {
+	float: left;
+	border-right: 1px solid #dcdcdc;
+	height: 55px;
+}
+
+.consCellButton {
+	color: $deepGray;
+	background: rgba($white, 30%);
+	font-size: 14px;
+	line-height: 14px;
+	width: auto;
+	margin-right: 1px;
+	border: none;
+	border-radius: 6px;
+	transition-duration: 0.5s;
+}
+.consCellButton:hover {
+	color: $deepBlue;
+	background: rgba($white, 50%);
+	cursor: pointer;
+}
+
+.pagination {
+	position: absolute;
+	left: 0;
+	right: 0;
+
+	bottom: 0;
+	margin: 0;
+	margin-bottom: 100px;
+	a {
+		color: $white;
+	}
+}
+.pagination li {
+	width: 30px;
+	height: 30px;
+	color: $white;
+	background: $black;
+	display: inline-block;
+	line-height: 30px;
+	margin: 1px;
+}
+.pagination li:hover {
+	background-color: $clickableHover;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.24), 0 5px 5px 0 rgba(0, 0, 0, 0.19);
+	color: $white;
+}
+.green {
+	color: $green;
+}
+
+.orange {
+	color: $orange;
+}
+
+.red {
+	color: $red;
+}
+
+.gray {
+	color: $lightGray;
+}
+
+///////////////////// Print format
+.printLayout {
+	padding-top: 30px;
+}
+.printLayout p {
+	text-align: center;
+	color: $deepBlue;
+	margin: 20px;
+}
+.printLayout button {
+	margin-top: 20px;
+	float: none;
+}
+.printable {
+	width: 1210px;
+	margin: auto;
+}
+.printMenu {
+	width: 200px;
+	height: 550px;
+	background: $deepGray;
+	color: $white;
+	float: left;
+}
+.printMenu h4 {
+	color: $paleGray;
+	font-size: 16px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid rgba($paleGray, 30%);
+	transition-duration: 0.5s;
+}
+.printMenu h4:hover {
+	color: $clickableHover;
+	font-size: 16px;
+	line-height: 50px;
+	text-align: center;
+	border-bottom: 1px solid rgba($paleGray, 30%);
+	background: $black;
+}
+.printView {
+	width: 1000px;
+	height: 550px;
+	background: $white;
+	box-shadow: 3px 3px $lightGray;
+	float: left;
+	overflow-y: scroll;
+}
+.print {
+	padding: 30px;
+}
+.print .result2 {
+	width: 230px;
+}
+.printCons p {
+	padding: 0;
+	margin: 0;
+	text-align: left;
+	color: $black;
+	line-height: 20px;
+}
+.printCons p span {
+	color: $black;
+	padding: 10px 8px;
+	margin: 0;
+	border-right: 1px solid $lightGray;
+	display: inline-block;
+}
+.invoice {
+	width: 900px;
+	padding: 50px 50px;
+}
+.invoice h1 {
+	text-align: center;
+}
+
+.invoice p {
+	text-align: left;
+	font-size: 14px;
+	color: $black;
+}
+.invoiceDate {
+	text-align: right;
+}
+.invoiceRow {
+	p {
+		color: $black;
+		font-size: 0.8rem;
+		float: left;
+		width: 65px;
+		margin: 0;
+		padding: 10px 5px;
+		border: 1px solid gray;
+	}
+}
+.print .today {
+}
