@@ -143,6 +143,7 @@ function App() {
   newState.displayFrame === "LoadingUnloading" ? <LoadUnload todayInSeconds={todayInSeconds}/> :
   newState.displayFrame === "Print" ? <ForPrint colorsStates = {colorsStates} todayIs={todayIs}/> :<Start />
 
+  
 
   return (
     <VisitTrack.Provider value={{countState: newState, countDispatch: dispatch}}>

@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/soham/static/css/main.85802699.chunk.css",
+    "main.js": "/soham/static/js/main.d74ef4cf.chunk.js",
+    "main.js.map": "/soham/static/js/main.d74ef4cf.chunk.js.map",
+    "runtime-main.js": "/soham/static/js/runtime-main.d4cbece6.js",
+    "runtime-main.js.map": "/soham/static/js/runtime-main.d4cbece6.js.map",
+    "static/css/2.13585a1a.chunk.css": "/soham/static/css/2.13585a1a.chunk.css",
+    "static/js/2.9e0ac680.chunk.js": "/soham/static/js/2.9e0ac680.chunk.js",
+    "static/js/2.9e0ac680.chunk.js.map": "/soham/static/js/2.9e0ac680.chunk.js.map",
+    "static/js/3.e8906144.chunk.js": "/soham/static/js/3.e8906144.chunk.js",
+    "static/js/3.e8906144.chunk.js.map": "/soham/static/js/3.e8906144.chunk.js.map",
+    "index.html": "/soham/index.html",
+    "static/css/2.13585a1a.chunk.css.map": "/soham/static/css/2.13585a1a.chunk.css.map",
+    "static/css/main.85802699.chunk.css.map": "/soham/static/css/main.85802699.chunk.css.map",
+    "static/js/2.9e0ac680.chunk.js.LICENSE.txt": "/soham/static/js/2.9e0ac680.chunk.js.LICENSE.txt",
+    "static/media/bg.62641cf2.jpg": "/soham/static/media/bg.62641cf2.jpg",
+    "static/media/siddhivinayak.b5adc4f7.png": "/soham/static/media/siddhivinayak.b5adc4f7.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d4cbece6.js",
+    "static/css/2.13585a1a.chunk.css",
+    "static/js/2.9e0ac680.chunk.js",
+    "static/css/main.85802699.chunk.css",
+    "static/js/main.d74ef4cf.chunk.js"
+  ]
+}

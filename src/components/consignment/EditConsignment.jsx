@@ -68,7 +68,7 @@ function EditConsignment({nameC, id, noId, onclick}) {
 //     //const clientNameToArray = new Array(clientNameSelect)
 //     console.log("This time: " + clientNameSelect)
 //     //console.log("gotname " + captureNamesFromData[10].clientName + clientNameSelect.length)
-        const payment = ["Paid", "To Pay"]
+        const payment = ["Paid", "To Pay", "Billed"]
     
     
     
